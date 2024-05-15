@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro to reg form</title>
+  <link rel="stylesheet" href="regform.css">
+</head>
+<body>
+  <div class="main">
+    <form>
+    <label class="lbl">Full Name: </label><input type="text" placeholder="Type Your Full-Name" id="name-js" onkeyup="registrateName();"><span id="name-error"></span><br>
+    <label class="lbl">User Name:  </label><input type="text" placeholder=" Type Your User- Name" id="user-js" onkeyup="registrateUname();"><span id="user-error" ></span><br>
+    <label class="lbl">E-mail:                 . </label><input type="email" placeholder="Type your E-mail" id="mail-js" onkeyup="registrateEmail();"><span id="email-error"></span><br>
+    <label class="lbl">Phone Number:</label><input type="tel" placeholder="Enter your number" id="nums-js" onkeyup="registratePhone();"><span id="phone-error"></span><br>
+    <label class="lbl">Nationality</label><input type="search"><br>
+    <label class="lbl">Id. Number        </label> <input type="tel" placeholder="Enter your card Id" id="number-js" onkeyup="registrateCard();"><span id="id-error"></span><br>
+    <label class="lbl">Password   </label> <input type="password" placeholder="Choose a strong password" id="password-js" onkeyup="passWord();"><span id="weak-password"></span><br>
+    <label class="lbl">Retype Password</label> <input type="password" placeholder="Retype your password" id="password-js" onkeyup="registrateCard();"><span id="password doesn t match"></span><br>
+
+
+    <button id="reg-js">Register</button><span id="reg-error"></span>
+    </form>
+  </div>
+  <script src="regfrm.js">
+ 
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- hdjkdsjdsjjasdhjahjhjajshjfhjhdfjjdsa
+  jhjfhasjjkajskjkdasjkds
+khjasjjckjjghjadskjkasdkdask-->
+  <div class="container">
+  <h1>EVENTO.<label id="sport">SPORTING</label></h1>
+  <h4>The best choice !  <button><a href="regform.html" target="_self">Register</a></button>  <button><a href="login.html" target="_self">Login</a></button></h4>
+  <div class="selector">
+    <div id="selectField">
+      <p id="selectText">Select the Event</p>
+      <img src="images/send-icon.png.png" id="arrowIcon">
+    </div>
+    <ul id="list" class="hide">
+      <li class="options">
+        <img src="images/mus.png">
+        <p>Concert</p>
+      </li>
+      <li class="options">
+        <img src="images/spt.png">
+        <p>Sport</p>
+      </li>
+      <li class="options">
+        <img src="images/send-icon.png.png">
+        <p>Others</p>
+      </li>
+  
+    </ul>
+  </div>
+  </div>
+
+
+<script> 
+const selectField = document.getElementById("selectField");
+const selectText = document.getElementById("selectText");
+const options = document.getElementsByClassName("options");
+const list = document.getElementById("list");
+const arrowIcon = document.getElementById("arrowIcon");
+
+ selectField.onclick = function(){
+  list.classList.toggle("hide");
+  arrowIcon.classList.toggle("rotate");
+  
+ }
+
+for (option of options){
+  option.onclick = function(){
+    selectText.innerHTML = this.textContent;
+    list.classList.toggle("hide");
+    arrowIcon.classList.toggle("rotate");
+  }
+}
+</script>
+  
+</body>
+</html>
